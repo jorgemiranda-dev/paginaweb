@@ -32,7 +32,35 @@
 <div id="articulos">
 
     <div class = "contenido">
-    <section>    <p>Probando, probando. 1, 2.</p> </section>
+    <section>    <p>Probando, probando. 1, 2.</p>
+    <input type="text" name="nombre" placeholder="Escriba aquí">
+    <form>
+        <label>
+        <input type="checkbox" id="checkbox1" name="avestruz">
+        Avestruz
+        </label>
+        <label>
+        <input type="checkbox" id="checkbox2" name="emu">
+        Emu</label>
+        <label>
+        <input type="checkbox" id="checkbox3" name="gallina grande">
+        Gallina Grande
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+        const checkbox = document.querySelectorAll("checkbox1", "checkbox2", "checkbox3");
+
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener("change", function() {
+                console.log(checkbox.checked);
+            })
+            
+        });
+
+    </script>
+    </section>
         <article></article>
 
 </div>
